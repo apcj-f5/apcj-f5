@@ -1,5 +1,5 @@
 name: "OpenSSF Scorecard Monitoring"
-on: 
+on:
   # Scheduled trigger
   schedule:
     # Run every Sunday at 00:00
@@ -10,7 +10,7 @@ on:
 permissions:
   # Write access in order to update the local files with the reports
   contents: write
-  pull-requests: none 
+  pull-requests: none
   # Write access in order to create issues
   issues: write
   packages: none
@@ -32,4 +32,4 @@ jobs:
           # The token is needed to create issues, discovery mode and pushing changes in files
           github-token: ${{ secrets.GITHUB_TOKEN }}
           discovery-enabled: true
-          discovery-orgs: 'apcj-f5'
+          discovery-orgs: "apcj-f5"
